@@ -6,11 +6,11 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from dotenv import find_dotenv, load_dotenv
 
-from conts import ALLOWED_UPDATES
 from database.engine import create_db, drop_db, session_maker
 from handlers.admin_private import admin_router
 from handlers.user_private import user_router
 from middlewares.db import DataBaseSession
+from conts import ALLOWED_UPDATES
 
 load_dotenv(find_dotenv())
 
